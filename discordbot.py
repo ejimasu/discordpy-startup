@@ -1,8 +1,9 @@
 from discord.ext import commands
 import os
 import traceback
+import random
 
-bot = commands.Bot(command_prefix='/')
+bot = commands.Bot(command_prefix='ram')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
@@ -16,6 +17,23 @@ async def on_command_error(ctx, error):
 @bot.command()
 async def ping(ctx):
     await ctx.send('pong')
+@bot.command()
+async def hibiki(ctx,message):
+    ramu = [
+        'まだ終わってねえんだよ。',
+        '死が救済訳ないだろ',
+        'こんな戦況からでも勝てるのが僕ら',
+        '死体撃ちする奴がいるとゲームが楽しくなくなる。',
+        'Valorantに全てを賭けれるのかよ',
+        '動画見た。リロードの最中に逃げろよ。と思うのは俺がFPSに慣れてるからか？\n銃声で即座に敵の位置を確認、遮蔽物を利用してのタイミングを計った立ち回り\nうずくまってて撃たれてる連中は馬鹿としか言いようがないよ\nでも流石に一般人に要求するのは酷か'
+    ]
+    rand_num1 = random.randint(0,len(ramu) - 1)
+    if message=='tukareta':
+        await ctx.send(ramu[rand_num1])
+    else:
+        await ctx.send('疲れてるのか疲れてないのかはっきりしろよ')
+    
+    
 
 
 bot.run(token)
