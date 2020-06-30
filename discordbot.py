@@ -18,7 +18,7 @@ async def on_command_error(ctx, error):
 async def ping(ctx):
     await ctx.send('pong')
 @bot.command()
-async def hibiki(ctx,message):
+async def hibiki(ctx,message='tukareta'):
     ramu = [
         'まだ終わってねえんだよ。',
         '死が救済訳ないだろ',
