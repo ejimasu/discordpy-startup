@@ -32,6 +32,7 @@ async def hibiki(ctx,message='tukareta'):
         '楽しまなきゃ意味ないでしょ',
         'なｎ、なんかあかあｋあかいひげ、みたいなのが生えてるこれ',
         'おかしいだろ',
+        '助けてkazu channel',
         
     ]
     rand_num1 = random.randint(0,len(ramu) - 1)
