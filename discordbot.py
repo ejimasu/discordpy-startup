@@ -34,6 +34,7 @@ async def hibiki(ctx,message='tukareta'):
         'おかしいだろ',
         '助けてkazu channel',
         'ただ単純なASOBI',
+        'なんで俺の声が暁に聞こえるん'
     ]
     rand_num1 = random.randint(0,len(ramu) - 1)
     if message=='tukareta':
