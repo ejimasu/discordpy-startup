@@ -46,7 +46,15 @@ async def hibiki(ctx,message='tukareta'):
         
         
     ]
-       hira = [
+ 
+    rand_num1 = random.randint(0,len(ramu) - 1)
+    if message=='tukareta':
+        await ctx.send(ramu[rand_num1])
+    else:
+        await ctx.send('疲れてるのか疲れてないのかはっきりしろよ')
+@bot.command()
+async def hirama(ctx):
+          hira = [
            '殺してくれ',
            '頼むから',
            'あの子マジでよかったわ',
@@ -60,14 +68,8 @@ async def hibiki(ctx,message='tukareta'):
            
            
        ]
-    rand_num1 = random.randint(0,len(ramu) - 1)
-    rand_num2 = random.randint(0,len(hira) - 1)
-    if message=='tukareta':
-        await ctx.send(ramu[rand_num1])
-    if message=='hirama':
-        await ctx.send(hira[rand_num2])
-    else:
-        await ctx.send('疲れてるのか疲れてないのかはっきりしろよ')
+rand_num2 = random.randint(0,len(hira) - 1)
+await ctx.send(hira[rand_num2])
     
     
 
