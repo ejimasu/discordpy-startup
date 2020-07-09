@@ -3,7 +3,7 @@ import os
 import traceback
 import random
 
-bot = commands.Bot(command_prefix='ram')
+bot = commands.Bot(command_prefix='r')
 token = os.environ['DISCORD_BOT_TOKEN']
 
 
@@ -46,9 +46,26 @@ async def hibiki(ctx,message='tukareta'):
         
         
     ]
+       hira = [
+           '殺してくれ',
+           '頼むから',
+           'あの子マジでよかったわ',
+           '許してください',
+           'ぼくは病気です',
+           'やめてくれやめてくれ',
+           'ミュートとか言うな',
+           '滑るとか言うな',
+           'まあ、良いことがあったときは誰かに話したくなりますからね',
+           
+           
+           
+       ]
     rand_num1 = random.randint(0,len(ramu) - 1)
+    rand_num2 = random.randint(0,len(hira) - 1)
     if message=='tukareta':
         await ctx.send(ramu[rand_num1])
+    if message=='hirama':
+        await ctx.send(hira[rand_num2])
     else:
         await ctx.send('疲れてるのか疲れてないのかはっきりしろよ')
     
