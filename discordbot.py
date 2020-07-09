@@ -54,22 +54,22 @@ async def hibiki(ctx,message='tukareta'):
         await ctx.send('疲れてるのか疲れてないのかはっきりしろよ')
 @bot.command()
 async def hirama(ctx):
-          hira = [
-           '殺してくれ',
-           '頼むから',
-           'あの子マジでよかったわ',
-           '許してください',
-           'ぼくは病気です',
-           'やめてくれやめてくれ',
-           'ミュートとか言うな',
-           '滑るとか言うな',
-           'まあ、良いことがあったときは誰かに話したくなりますからね',
+    hira = [
+            '殺してくれ',
+            '頼むから',
+            'あの子マジでよかったわ',
+            '許してください',
+            'ぼくは病気です',
+            'やめてくれやめてくれ',
+            'ミュートとか言うな',
+            '滑るとか言うな',
+            'まあ、良いことがあったときは誰かに話したくなりますからね',
            
            
            
-       ]
-rand_num2 = random.randint(0,len(hira) - 1)
-await ctx.send(hira[rand_num2])
+    ]
+    rand_num2 = random.randint(0,len(hira) - 1)
+    await ctx.send(hira[rand_num2])
     
     
 
